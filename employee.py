@@ -35,7 +35,7 @@ class Employee:
             s += f'and receives a commission for {self.commission_contracts} contract(s) at {self.commision_rate}/contract. '
         if self.bonus_commission:
             s += f'and receives a bonus commission of {self.bonus_commission}.'
-            s += f' Their total pay is {self.get_pay()}.'
+        s += f' Their total pay is {self.get_pay()}.'
         return s
 
   
