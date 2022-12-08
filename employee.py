@@ -37,20 +37,22 @@ class Employee:
             s += f'and receives a bonus commission of {self.bonus_commission}.'
             s += f' Their total pay is {self.get_pay()}.'
         return s
-# Billie works on a monthly salary of 4000.  Their total pay is 4000.
-billie = Employee('Billie')
 
-# Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
-charlie = Employee('Charlie')
+  
+# Billie works on a monthly salary of 4000. Their total pay is 4000.
+billie = Employee('Billie', salary=4000)
 
-# Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
-renee = Employee('Renee')
+# Charlie works on a contract of 100 hours at 25/hour. Their total pay is 2500.
+charlie = Employee('Charlie', pay_rate=25, contract_hours=100)
 
-# Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
-jan = Employee('Jan')
+# Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract. Their total pay is 3800.
+renee = Employee('Renee', pay_rate=0, salary=3000, commission_contracts=4, commision_rate=200)
 
-# Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
-robbie = Employee('Robbie')
+# Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract. Their total pay is 4410.
+jan = Employee('Jan', pay_rate=25, contract_hours=150, commission_contracts=3, commision_rate= 220)
 
-# Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
-ariel = Employee('Ariel')
+# Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500. Their total pay is 3500.
+robbie = Employee('Robbie', salary=2000, bonus_commission=1500)
+
+# Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600. Their total pay is 4200.
+ariel = Employee('Ariel', pay_rate=30, contract_hours=120, bonus_commission=600)
